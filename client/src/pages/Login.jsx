@@ -1,11 +1,11 @@
 import React from 'react';
-import InputField from '../components/common/Fields/inputField';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { loginSchema } from '../components/common/constant/validation';
 import toast from 'react-hot-toast';
 import { useUserContext } from '../context/userContext';
 import axiosInstance from '../config/AxiosInstance';
+import InputField from '../components/common/Fields/InputField';
 
 const Login = () => {
     const { isAuthenticated, setIsAuthenticated, token, setToken, user, setUser } = useUserContext();
