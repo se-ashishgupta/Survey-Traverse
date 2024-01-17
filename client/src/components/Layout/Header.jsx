@@ -52,6 +52,7 @@ const Header = () => {
                 setIsAuthenticated(false);
                 setToken(null);
                 setUser(null);
+                toast.success(response.data.message);
             }
         } catch (error) {
             toast.error(error.response.data.message);
