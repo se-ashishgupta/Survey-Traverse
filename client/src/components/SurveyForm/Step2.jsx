@@ -1,10 +1,10 @@
 import React from 'react';
-import InputField from '../common/Fields/inputField';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { createSurveySchema } from '../common/constant/validation';
 import SelectField from '../common/Fields/SelectField';
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
+import InputField from '../common/Fields/InputField';
 
 const CountriesData = [
     { value: 'afghanistan', label: 'Afghanistan' },

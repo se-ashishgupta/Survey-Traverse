@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import InputField from '../common/Fields/inputField';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { createSurveySchema } from '../common/constant/validation';
 import SelectField from '../common/Fields/SelectField';
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 import toast from 'react-hot-toast';
+import InputField from '../common/Fields/InputField';
 
 const GenderData = [
     {

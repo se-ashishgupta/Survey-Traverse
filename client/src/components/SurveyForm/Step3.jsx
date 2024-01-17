@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import InputField from '../common/Fields/inputField';
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 import toast from 'react-hot-toast';
+import InputField from '../common/Fields/InputField';
 
 const Step3 = ({ step, setStep, errors, control }) => {
 
