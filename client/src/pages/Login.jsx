@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { loginSchema } from '../components/common/constant/validation';
@@ -8,7 +8,8 @@ import axiosInstance from '../config/AxiosInstance';
 import InputField from '../components/common/Fields/InputField';
 
 const Login = () => {
-    const { isAuthenticated, setIsAuthenticated, token, setToken, user, setUser } = useUserContext();
+    const { setIsAuthenticated, setToken, setUser } = useUserContext();
+    const [loading, setLoading] = useState(false);
 
     const {
         handleSubmit,
@@ -21,6 +22,7 @@ const Login = () => {
 
     const onSubmit = async (data) => {
         try {
+            setLoading(true);
             const response = await axiosInstance({
                 method: "POST",
                 url: "/login",
@@ -42,6 +44,8 @@ const Login = () => {
             setIsAuthenticated(false);
             setToken(null);
             toast.error(error.response.data.message);
+        } finally {
+            setLoading(false);
         }
 
     };
@@ -76,6 +80,7 @@ const Login = () => {
                         <div className='my-10 w-[100%] grid place-items-center'>
                             <button
                                 type='submit'
+                                disabled={loading}
                                 className=' bg-backPrimary_color text-text_color1 text-xl font-bold px-4 py-1 rounded-lg hover:bg-transparent border-2 border-backPrimary_color hover:text-text_color3 transition-all duration-300'
                             >Login</button>
                         </div>
