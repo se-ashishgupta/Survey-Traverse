@@ -37,7 +37,7 @@ const SelectField = (props) => {
                             }
                         </select>
                         {errors && errors[name] && (
-                            <p className="error-message">{errors[name].message}</p>
+                            <p className="text-red-400">{errors[name].message}</p>
                         )}
                     </>
                 )}
