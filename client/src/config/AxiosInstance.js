@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: import.meta.env.VITE_SOME_KEY
+    baseURL: import.meta.env.VITE_SERVER_URI
 });
 
 axiosInstance.interceptors.request.use(

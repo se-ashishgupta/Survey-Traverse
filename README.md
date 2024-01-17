@@ -34,7 +34,7 @@ And Now Fill This Given Variable
 ** Client **
 
 ```bash
-VITE_SOME_KEY = http://localhost:8000/api/v1
+VITE_SERVER_URI = http://localhost:8000/api/v1
 ```
 
 ** Server **
