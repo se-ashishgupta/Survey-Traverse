@@ -5,7 +5,7 @@
 ![](UI/ui3.png)
 
 React Survey Traverse- Using  React + Vite.
-[Live Demo](https://image-traverse-unsplash.vercel.app)
+[Live Demo](https://survey-traverse.vercel.app)
 
 ## Tech Stack
 
