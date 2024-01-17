@@ -9,7 +9,7 @@ React Survey Traverse- Using  React + Vite.
 
 ## Tech Stack
 
-**React, React-Router-Dom, Redux, ReduxToolkit, JavaScript, Tailwind, React-Icons, Axios, Nodejs, ExpressJs, JsonWebToken, MongoDB**
+**React, React-Router-Dom, Redux, ReduxToolkit, JavaScript, Tailwind, React-Icons, Axios, Nodejs, ExpressJs, JsonWebToken, MongoDB, Mongoose**
 
 ## Features
 
@@ -17,7 +17,7 @@ React Survey Traverse- Using  React + Vite.
 - **List of All Survey at All Survey Page after Admin Login**
 - **Authorization using JsonWebToken, Token stored in LocalStorage**
 - **Admin Login Credentials: **
-- *Eamil: admin@gmail.com*
+- *Email: admin@gmail.com*
 - *Password: admin@123*
 
 ## Getting Started
